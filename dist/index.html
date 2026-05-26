@@ -19,6 +19,30 @@
     <meta name="twitter:image" content="./assets/hero-D-MswDub.jpg" />
     <link rel="icon" type="image/png" href="./assets/favicon.png" />
     <title>Dentista em Itaipu, Niterói | Dra. Simone Paez</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1XVF5XF5KM"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-1XVF5XF5KM");
+    </script>
+    <!-- Google Tag Manager -->
+    <script>
+      (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-NLM77LL");
+    </script>
+    <!-- End Google Tag Manager -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -1018,6 +1042,17 @@
         text-shadow: 0 2px 12px rgba(0, 0, 0, 0.18);
       }
 
+      .hero-contact-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .hero-contact-list .contact-chip {
+        margin-top: 0;
+      }
+
       .button-row {
         display: flex;
         flex-wrap: wrap;
@@ -1359,6 +1394,10 @@
             url("./assets/banner.jpg") calc(50% - 250px) center / cover no-repeat;
         }
 
+        .hero-logo {
+          margin-bottom: 45px;
+        }
+
         .hero-logo img {
           width: min(300px, calc(100vw - 56px));
         }
@@ -1465,7 +1504,7 @@
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZFR9W6W"
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NLM77LL"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <main id="top">
@@ -1489,7 +1528,10 @@
               Agendar pelo WhatsApp
             </a>
           </div>
-          <div class="contact-chip">Atendimento particular • Não atendemos planos odontológicos</div>
+          <div class="hero-contact-list" aria-label="Informações de atendimento">
+            <div class="contact-chip">Atendimento particular</div>
+            <div class="contact-chip">Não atendemos planos odontológicos</div>
+          </div>
         </div>
       </section>
 
